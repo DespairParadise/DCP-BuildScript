@@ -62,3 +62,4 @@ Write-Host -NoNewline  "[*] SHA-1 : "
 .\fciv.exe -sha1 $(Get-ChildItem .\Output\*exe) | findstr "exe" | %{$_.split(' ')[0]}
 
 Write-Host "[*] Done."
+pause
