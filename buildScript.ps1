@@ -51,9 +51,10 @@ if (!(Test-Path "C:\Program Files (x86)\Inno Setup 5\ISCC.exe"))
 }
 
 # Building DCP
-Write-Host "[+] Building Despair Codec Pack"
+Write-Host "[+] Building Despair Codec Pack (can take a while)"
 Start-Sleep -s 2
-. "C:\Program Files (x86)\Inno Setup 5\ISCC.exe" .\setup.iss
+. "C:\Program Files (x86)\Inno Setup 5\ISCC.exe" .\setup.iss > inno_build.log
+Write-Host "[*] Build log: inno_build.log"
 
 # Printing Checksums
 Write-Host -NoNewline  "[*] MD5 :   "
