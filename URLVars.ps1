@@ -1,0 +1,5 @@
+$Global:mpc = "https://freefr.dl.sourceforge.net/project/mpcbe/MPC-BE/Nightly%20Builds%20%28from%20svn%20trunk%29/1.5.2%20%28build%203973%29%20beta/MPC-BE.1.5.2.3973.x64.7z"
+$Global:mad = "http://madshi.net/madVR.zip"
+$Global:lav = "https://github.com/Nevcairiel/LAVFilters/releases/download/0.73.1/LAVFilters-0.73.1-x64.zip"
+$Global:xys = "https://github.com/Cyberbeing/xy-VSFilter/releases/download/3.1.0.752/XySubFilter_3.1.0.752_x64.zip"
+$Global:syn = "https://github.com/Syncplay/syncplay/releases/download/v1.6.0/Syncplay_1.6.0_Portable.zip"
