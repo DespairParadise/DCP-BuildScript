@@ -7,6 +7,9 @@ Write-Host Version : 0.2
 Write-Host ===================================================
 Write-Host
 
+# Enable TLS v1.2 to allow downloads from GitHub
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 # Sourcing URLs
 . .\URLVars.ps1
 
