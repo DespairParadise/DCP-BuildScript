@@ -1,5 +1,5 @@
 #define MyAppName "Despair Codec Pack"
-#define MyAppVersion "2.0.0-akane"
+#define MyAppVersion "2.0.1-akane"
 #define MyAppPublisher "Despair-Paradise"
 #define MyAppURL "https://codec.despair-paradise.com/"
 #define MyAppExeName "MPC-BE\mpc-be64.exe"
@@ -21,7 +21,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=Output
-OutputBaseFilename=dcp_2.0.0_setup-fr
+OutputBaseFilename=dcp_2.0.1_setup-fr
 Compression=lzma
 SolidCompression=yes
 ArchitecturesInstallIn64BitMode=x64
