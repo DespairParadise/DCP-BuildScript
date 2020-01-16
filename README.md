@@ -22,4 +22,4 @@
   
 ## I still have some questions...
 
-Just join our Discord and ask for Automne: https://discord.gg/6xa5MSz
+Just join our Discord and ask for Automne: https://discord.gg/TN8qrDG
