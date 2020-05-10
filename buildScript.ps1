@@ -43,20 +43,24 @@ Remove-Item ("Extracted\MPC-BE\" + $folderName)
 
 # Downloading Inno Setup
 Write-Host "[?] Looking for Inno Setup"
-if (!(Test-Path "C:\Program Files (x86)\Inno Setup 5\ISCC.exe"))
+if (!(Test-Path "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"))
 {
 	Write-Host "[-] Inno Setup not found in Program Files (x86)"
 	Write-Host "[+] Downloading Inno Setup"
 	Invoke-WebRequest -Uri "http://www.jrsoftware.org/download.php/is.exe" -out ".\Downloads\is.exe"
 	Write-Host "[+] Installing Inno Setup"
 	.\Downloads\is.exe /VERYSILENT
-	Start-Sleep -s 10
+	DO
+	{
+		Start-Sleep -s 2
+	} While (!(Test-Path "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"))
+	
 }
 
 # Building DCP
 Write-Host "[+] Building Despair Codec Pack (can take a while)"
 Start-Sleep -s 2
-. "C:\Program Files (x86)\Inno Setup 5\ISCC.exe" .\setup.iss > inno_build.log
+. "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" .\setup.iss > inno_build.log
 Write-Host "[*] Build log: inno_build.log"
 
 # Printing Checksums
